@@ -7,7 +7,6 @@ public class ThreeSum {
         int[] arr = { 7, -6, 3, 8, -1, 8, -11 };
         int target = 0; // sum of three number in the above array should be equals target
         solution(arr, target, arr.length);
-
     }
 
     public static void solution(int[] a, int target, int n) {
