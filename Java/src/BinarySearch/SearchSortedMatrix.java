@@ -3,6 +3,9 @@ package BinarySearch;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// Time complexity: O(log n)
+// Space complexity: O(1)
+
 public class SearchSortedMatrix {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -17,51 +20,18 @@ public class SearchSortedMatrix {
     }
 
     public static int[] Solution(int[][] matrix, int target) {
-        int row = 0, col = 0, left = 0, right = -1;
-        int rowLength = matrix.length;
-        int colLength = matrix[0].length;
-        int totalSize = rowLength * colLength;
+        int i = 0, j = matrix.length - 1;
         int[] ans = { -1, -1 };
-        for (int i = 0; i < totalSize; i++) {
-            if (right != -1) {
-                if (left > right) {
-                    right = -1;
-                    row = row + 1;
-                } else {
-                    int mid = (left + right) / 2;
-                    if (matrix[0][mid] == target) {
-                        ans[0] = 0;
-                        ans[1] = mid;
-                        return ans;
-                    } else if (matrix[0][mid] < target) {
-                        left = mid + 1;
-                    } else {
-                        right = mid - 1;
-                    }
-                }
-
+        while (i < matrix.length && j >= 0) {
+            if (matrix[i][j] == target) {
+                ans[0] = i;
+                ans[1] = j;
+                return ans;
+            } else if (matrix[i][j] < target) {
+                i++;
             } else {
-                if (row > rowLength - 1 || col > colLength - 1) {
-                    return ans;
-                }
-                if (matrix[row][col] == target) {
-                    ans[0] = row;
-                    ans[1] = col;
-                    return ans;
-                } else if (matrix[row][col] < target) {
-                    if (row == 0 && col == 0 && matrix[row][colLength - 1] < target) {
-                        row = row + 1;
-                        col = colLength - 1;
-                    } else if (row == 0 && col == 0 && matrix[row][colLength - 1] > target) {
-                        right = colLength - 1;
-                    } else {
-                        row = row + 1;
-                    }
-                } else {
-                    col = col - 1;
-                }
+                j--;
             }
-
         }
         return ans;
     }
