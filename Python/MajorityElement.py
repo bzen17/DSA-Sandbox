@@ -1,7 +1,11 @@
+
 def majority_element():
     n = input("Enter your value: ")
     arr = [5, 7, 4, 7, 4, 3, 7, 4, 4, 7, 7, 2, 5, 7]
     print(solution(arr, int(n)))
+
+# Time complexity: O(n)
+# Space complexity: O(1)
 
 
 def solution(a, n):

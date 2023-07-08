@@ -3,6 +3,9 @@ def FirstLastIndex():
     target = 7
     Solution(arr, target)
 
+# Time complexity: O(log n)
+# Space complexity: O(1)
+
 
 def Solution(arr, target):
     first = last = -1

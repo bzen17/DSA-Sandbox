@@ -9,6 +9,9 @@ public class FirstLastIndex {
 
     }
 
+    // Time complexity: O(log n)
+    // Space complexity: O(1)
+
     public static void Solution(int[] arr, int target) {
         int first = -1, last = -1;
         int left = 0, right = arr.length - 1;
