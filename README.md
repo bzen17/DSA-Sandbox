@@ -19,7 +19,7 @@ Data Structures and Algorithms (DSA) are essential topics for any programmer. Th
 
 ## DSA Topics
 
-- Arrays
+- Arrays 
 - Binary Search
 - Recursion and Backtracking
 - Dynamic Programming
@@ -31,15 +31,22 @@ Data Structures and Algorithms (DSA) are essential topics for any programmer. Th
 
 ## Java Solutions
 
-The Java solutions can be found in the [Java](./Java/src) directory. Each problem is organized in its own folder and includes a detailed explanation of the problem, the solution implemented in Java, and a corresponding test suite. The Java solutions are well-documented and follow standard coding conventions for better readability.
+The Java solutions can be found in the [Java](./Java/src) directory. Each problem is organized in its own folder as per below DSA Topics:
 
-To access the Java solutions, simply navigate to the [Java](./Java) directory.
+- [Arrays](./Java/src/Arrays/)
+- [Binary Search](./Java/src/BinarySearch/)
+- [Recursion and Backtracking](./Java/src/RecurssionBacktracking/)
+
 
 ## Python Solutions
 
-The Python solutions can be found in the [Python](./Python) directory. Similar to the Java solutions, each problem is organized in its own folder and includes a comprehensive problem description, the Python solution code, and a corresponding test suite. The Python solutions are written in a clean and concise manner, emphasizing readability and efficiency.
+The Python solutions can be found in the [Python](./Python) directory. Similar to the Java solutions, each problem is organized in its own folder as per below DSA Topics:
 
-To access the Python solutions, simply navigate to the [Python](./Python) directory.
+- [Arrays](./Python/Arrays/)
+- [Binary Search](./Python/BinarySearch/)
+- [Recursion and Backtracking](./Python/RecurssionBacktracking/)
+
+==All solutions are written in a clean and concise manner, emphasizing readability, efficiency and best time and space complexity.==
 
 ## License
 
