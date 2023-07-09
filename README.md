@@ -46,7 +46,7 @@ The Python solutions can be found in the [Python](./Python) directory. Similar t
 - [Binary Search](./Python/BinarySearch/)
 - [Recursion and Backtracking](./Python/RecurssionBacktracking/)
 
-==All solutions are written in a clean and concise manner, emphasizing readability, efficiency and best time and space complexity.==
+```All solutions are written in a clean and concise manner, emphasizing readability, efficiency and best time and space complexity.```
 
 ## License
 
